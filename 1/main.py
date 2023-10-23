@@ -9,8 +9,7 @@ def main() -> None:
     )
     engine.run()
 
-    is_allowed = engine.facts[engine.facts.last_index - 1]['is_allowed']
-    print('Transfusion:', 'Allowed' if is_allowed else 'Not allowed')
+    print('Transfusion:', engine.result.value)
 
 
 if __name__ == '__main__':
